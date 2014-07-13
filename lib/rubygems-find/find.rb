@@ -2,6 +2,7 @@ require 'rubygems'
 
 module Gem
   def self.find(dir)
+    dir = File.expand_path(dir)
     gemspecs = {}
     spec_files = Dir.glob(File.join(dir, "**/*.gemspec"))
     spec_files.each do |spec_file|
