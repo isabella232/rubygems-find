@@ -11,5 +11,5 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 1.9.2'
   spec.required_rubygems_version = '>= 1.3.5'
   spec.summary = "Find all RubyGems gemspecs in a directory tree"
-  spec.version = '0.0.3'
+  spec.version = '0.0.4'
 end
