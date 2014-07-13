@@ -5,7 +5,7 @@ module Gem
     gemspecs = {}
     spec_files = Dir.glob(File.join(dir, "**/*.gemspec"))
     spec_files.each do |spec_file|
-      Dir.chdir(File.dirname(spec_file))
+      Dir.chdir(File.expand_path(File.dirname(spec_file), dir))
       spec = Gem::Specification.load(spec_file)
       if spec
         spec.normalize
